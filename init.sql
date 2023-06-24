@@ -1,1 +1,0 @@
-CREATE USER 'auth_user'@
