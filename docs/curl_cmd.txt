@@ -1,0 +1,10 @@
+download
+
+curl --output test.mp3 -X GET http://mp3converter.com/download?fid=648953f3203efd21f18920e1 -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZha2V1c2VyQGVtYWlsLmNvbSIsImV4cCI6MTY4Njg2NTY4NSwiaWF0IjoxNjg2Nzc5Mjg1LCJhZG1pbiI6dHJ1ZX0.yd0vuB7t--nZAzaePvduQIZZ5-PX4qsRZYxlKBapG-c"
+
+
+login
+curl -X POST http://mp3converter.com/login -u "fakeuser@email.com:fake123"
+
+upload
+curl -X POST http://mp3converter.com/upload -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZha2V1c2VyQGVtYWlsLmNvbSIsImV4cCI6MTY4Njg2NTY4NSwiaWF0IjoxNjg2Nzc5Mjg1LCJhZG1pbiI6dHJ1ZX0.yd0vuB7t--nZAzaePvduQIZZ5-PX4qsRZYxlKBapG-c" -F "file=@test.mp4"
