@@ -1,0 +1,29 @@
+# Exclude node_modules directory
+node_modules/
+
+# Exclude built files and directories
+build/
+dist/
+*.log
+*.tmp
+
+# Exclude version control system files and directories
+.git/
+.svn/
+
+# Exclude environment-specific configuration files
+.env*
+.env.local
+
+# Exclude package manager lock files
+yarn.lock
+package-lock.json
+
+# Exclude development and test-specific files
+.dockerignore
+Dockerfile.dev
+.dockerignore
+.eslint*
+.prettier*
+
+manifests/
